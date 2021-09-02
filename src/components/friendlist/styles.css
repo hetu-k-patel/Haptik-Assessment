@@ -162,3 +162,47 @@
 /*  */
 /* Popup */
 /*  */
+.popup-box {
+   position: fixed;
+   background: rgba(0, 0, 0, 0.8);
+   width: 100%;
+   height: 100vh;
+   top: 0;
+   left: 0;
+}
+
+.box {
+   position: relative;
+   display: inline-block;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   overflow: auto;
+}
+
+.deletePopup {
+   width: 350px;
+   height: 180px;
+   background-color: hsl(185, 41%, 84%);
+   border-radius: 10px;
+   padding: 20px;
+   text-align: center;
+}
+
+.modalActionButtons {
+   margin-top: 50px;
+   display: flex;
+   justify-content: space-around;
+}
+
+.modalActionButtons button {
+   width: 100px;
+   padding: 7px;
+   border: none;
+   background-color: hsl(183, 100%, 15%);
+   color: white;
+   letter-spacing: 1px;
+   font-size: 15px;
+   cursor: pointer;
+   border-radius: 8px;
+}

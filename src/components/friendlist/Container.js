@@ -5,14 +5,25 @@ import { getFromLocalStorage } from '../../storage/index';
 import { Provider, FriendsListReducer } from '../../context/FriendListContext';
 import { ADD_DATA } from '../../constants/ActionTypes';
 import Items from './Items';
+import Popup from './Popup';
 import './styles.css';
 
 const Container = () => {
    const [friendName, setFriendName] = useState('');
+   const [isOpen, setIsOpen] = useState(false);
+   const [children, setChildrem] = useState('');
+
    const [friendListData, friendListDispatch] = useReducer(
       FriendsListReducer,
       getFromLocalStorage() || []
    );
+
+   const toggleModal = (component) => {
+      if (component) {
+         setChildrem(component);
+      }
+      setIsOpen((prev) => !prev);
+   };
 
    const handleInput = () => {
       const value = friendName;
@@ -43,10 +54,11 @@ const Container = () => {
             />
          </div>
          <div className="friendlist-items-wrapper">
-            <Provider value={{ friendListData, friendListDispatch }}>
+            <Provider value={{ friendListData, friendListDispatch, toggleModal }}>
                <Items name={friendName} />
             </Provider>
          </div>
+         <Popup open={isOpen} onClose={toggleModal} children={children} />
       </div>
    );
 };
