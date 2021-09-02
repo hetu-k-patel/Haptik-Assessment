@@ -1,0 +1,67 @@
+.friendListContainer {
+   min-width: 530px;
+   height: 500px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   border-radius: 5px;
+}
+
+.title {
+   text-align: center;
+   padding: 10px 0;
+   background-color: aquamarine;
+}
+
+.searchBox {
+   text-align: center;
+   padding: 5px;
+   border-bottom: 1px solid gray;
+}
+
+.searchBox input {
+   width: 100%;
+   font-size: 16px;
+   border: none;
+   padding: 7px;
+   letter-spacing: 1px;
+}
+
+.searchBox input:focus {
+   border: none;
+   outline: none;
+}
+
+.friendListItems ul {
+   list-style-type: none;
+}
+
+.friendListItems ul li {
+   align-items: center;
+   border-bottom: 1px solid rgb(173, 173, 173);
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 15px;
+}
+
+.friendListItemsContent strong {
+   margin: 5px 0;
+   display: inline-block;
+   letter-spacing: 1px;
+   color: rgb(32, 32, 32);
+}
+
+.friendListItemsContent span {
+   font-size: 12px;
+   letter-spacing: 1px;
+   color: gray;
+}
+
+.friendListItemsActions button {
+   margin: 0 5px;
+   padding: 5px;
+   background-color: aquamarine;
+   border-radius: 8px;
+   border: none;
+   cursor: pointer;
+}
