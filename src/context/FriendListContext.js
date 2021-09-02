@@ -16,7 +16,7 @@ export function FriendsListReducer(state, action) {
    let result = state;
    switch (action.type) {
       case ADD_DATA:
-         result = [...state, action.payload];
+         result = [action.payload, ...state];
          break;
 
       case FETCH_DATA:

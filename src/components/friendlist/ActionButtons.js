@@ -16,6 +16,7 @@ const ActionButtons = ({ friendId, isFav }) => {
 
    const handleEdit = (id) => {
       const editedName = prompt('Update your friend name...');
+      if (!editedName) return;
       friendListDispatch({ type: UPDATE_NAME, id, editedName });
    };
 

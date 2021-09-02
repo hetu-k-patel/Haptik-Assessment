@@ -1,30 +1,38 @@
 .friendListContainer {
-   min-width: 530px;
+   min-width: 450px;
    height: 500px;
    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
       rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
       rgba(0, 0, 0, 0.09) 0px -3px 5px;
-   border-radius: 5px;
+   border-radius: 10px;
 }
 
 .title {
    text-align: center;
-   padding: 10px 0;
-   background-color: aquamarine;
+   padding: 5px 0;
+   background-color: hsl(183, 100%, 15%);
+   font-family: 'Pacifico', cursive;
+   letter-spacing: 5px;
+   border-radius: 10px;
+   color: white;
 }
 
 .searchBox {
    text-align: center;
-   padding: 5px;
-   border-bottom: 1px solid gray;
+   padding: 15px;
+   margin-bottom: 10px;
 }
 
 .searchBox input {
-   width: 100%;
+   width: 85%;
    font-size: 16px;
    border: none;
-   padding: 7px;
-   letter-spacing: 1px;
+   padding: 12px 10px;
+   letter-spacing: 1.5px;
+   background-color: hsl(185, 41%, 84%);
+   border-radius: 20px;
+   font-weight: 600;
+   color: hsl(183, 100%, 15%);
 }
 
 .searchBox input:focus {
@@ -32,16 +40,20 @@
    outline: none;
 }
 
-.friendListItems ul {
+.friendListItems-ul {
    list-style-type: none;
+   margin-bottom: 30px;
 }
 
-.friendListItems ul li {
+.friendListItems-ul li {
+   margin: 5px auto;
+   width: 95%;
    align-items: center;
-   border-bottom: 1px solid rgb(173, 173, 173);
    display: flex;
    justify-content: space-between;
-   padding: 10px 15px;
+   padding: 8px 15px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   border-radius: 10px;
 }
 
 .friendListItemsContent strong {
@@ -60,7 +72,7 @@
 .friendListItemsActions button {
    margin: 0 5px;
    padding: 5px;
-   background-color: aquamarine;
+   background-color: hsl(185, 41%, 84%);
    border-radius: 8px;
    border: none;
    cursor: pointer;
@@ -102,16 +114,17 @@
 
 .pagination-item.dots:hover {
    background-color: transparent;
-   cursor: default;
+   cursor: pointer;
 }
 
 .pagination-item:hover {
    background-color: transparent;
-   cursor: default;
+   cursor: pointer;
 }
 
 .pagination-item.selected {
-   background-color: rgba(0, 0, 0, 0.08);
+   background-color: hsl(183, 100%, 15%);
+   color: white;
 }
 
 .pagination-item.arrow::before {

@@ -26,7 +26,7 @@ const Items = ({ name }) => {
 
    return (
       <div className="friendListItems">
-         <ul>
+         <ul className="friendListItems-ul">
             {currentTableData.map((data) => (
                <li key={data.id}>
                   <div className="friendListItemsContent">
