@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 
 import { FriendContext } from '../../context/FriendListContext';
 import { UPDATE_FAV, UPDATE_NAME, DELETE_DATA } from '../../constants/ActionTypes';
+import Popup from './Popup';
 
 const ActionButtons = ({ friendId, isFav }) => {
    const { friendListDispatch } = useContext(FriendContext);

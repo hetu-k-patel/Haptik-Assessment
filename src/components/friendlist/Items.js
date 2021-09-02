@@ -27,16 +27,25 @@ const Items = ({ name }) => {
    return (
       <div className="friendListItems">
          <ul className="friendListItems-ul">
-            {currentTableData.map((data) => (
-               <li key={data.id}>
-                  <div className="friendListItemsContent">
-                     <strong>{data.name}</strong>
+            {displayData.length ? (
+               currentTableData.map((data) => (
+                  <li key={data.id}>
+                     <div className="friendListItemsContent">
+                        <strong>{data.name}</strong>
+                        <br />
+                        <span>is your friend</span>
+                     </div>
+                     <ActionButtons friendId={data.id} isFav={data.isFav} />
+                  </li>
+               ))
+            ) : (
+               <li>
+                  <div style={{ margin: '0 auto' }} className="friendListItemsContent">
+                     <strong>No Data Found</strong>
                      <br />
-                     <span>is your friend</span>
                   </div>
-                  <ActionButtons friendId={data.id} isFav={data.isFav} />
                </li>
-            ))}
+            )}
          </ul>
          <Pagination
             className="pagination-bar"

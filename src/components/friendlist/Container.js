@@ -31,7 +31,7 @@ const Container = () => {
    return (
       <div className="friendListContainer">
          <div className="title">
-            <h1>Friend List</h1>
+            <h1>Friends List</h1>
          </div>
          <div className="searchBox">
             <input
