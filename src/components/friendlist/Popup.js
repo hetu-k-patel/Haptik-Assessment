@@ -1,6 +1,6 @@
 import ReactDom from 'react-dom';
 
-const Popup = ({ open, children, onClose }) => {
+const Popup = ({ open, children }) => {
    if (!open) return null;
 
    return ReactDom.createPortal(
