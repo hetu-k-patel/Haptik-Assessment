@@ -11,7 +11,7 @@ import './styles.css';
 const Container = () => {
    const [friendName, setFriendName] = useState('');
    const [isOpen, setIsOpen] = useState(false);
-   const [children, setChildrem] = useState('');
+   const [children, setChildren] = useState('');
 
    const [friendListData, friendListDispatch] = useReducer(
       FriendsListReducer,
@@ -20,7 +20,7 @@ const Container = () => {
 
    const toggleModal = (component) => {
       if (component) {
-         setChildrem(component);
+         setChildren(component);
       }
       setIsOpen((prev) => !prev);
    };
