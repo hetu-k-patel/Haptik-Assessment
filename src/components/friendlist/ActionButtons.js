@@ -33,7 +33,7 @@ const ActionButtons = ({ friendId, isFav }) => {
             </div>
             <div className="modalActionButtons">
                <button onClick={() => deleteData(id)}>Yes</button>
-               <button onClick={toggleModal}>Cancle</button>
+               <button onClick={toggleModal}>No</button>
             </div>
          </div>
       );
